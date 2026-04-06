@@ -11,9 +11,7 @@
     "preview": "vite preview",
   "start": "node server.cjs",
   "build": "vite build"
-}
-    
-  },
+},
   "dependencies": {
     "@cedrugs/pdf-parse": "^1.0.0",
     "@formspree/react": "^3.0.0",
