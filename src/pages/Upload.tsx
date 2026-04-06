@@ -385,7 +385,7 @@ const Upload = () => {
       const formData = new FormData();
       formData.append("resume", file);
 
-      const res = await fetch("http://localhost:5000/api/parse-resume", {
+      const res = await fetch("https://hiresense-backend.onrender.com/api/parse-resume", {
         method: "POST",
         body: formData,
       });
