@@ -9,10 +9,14 @@
     "build:dev": "vite build --mode development",
     "lint": "eslint .",
     "preview": "vite preview",
-    "start": "node server.js"
+  "start": "node server.cjs",
+  "build": "vite build"
+}
+    
   },
   "dependencies": {
     "@cedrugs/pdf-parse": "^1.0.0",
+    "@formspree/react": "^3.0.0",
     "@google/generative-ai": "^0.24.1",
     "@hookform/resolvers": "^3.10.0",
     "@radix-ui/react-accordion": "^1.2.11",
