@@ -217,7 +217,9 @@ app.post("/api/parse-resume", upload.single("resume"), async (req, res) => {
     });
   }
 });
-
+app.get("/", (req, res) => {
+  res.send("HireSense backend running");
+});
 const PORT = process.env.PORT || 5000;
 
 app.listen(PORT, () => {
