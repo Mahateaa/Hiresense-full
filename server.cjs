@@ -217,14 +217,16 @@ app.post("/api/parse-resume", upload.single("resume"), async (req, res) => {
     });
   }
 });
-
 const path = require("path");
 
+// serve frontend (optional)
 app.use(express.static(path.join(__dirname, "dist")));
 
-app.get("/*", (req, res) => {
+// fallback route (IMPORTANT FIX)
+app.use((req, res) => {
   res.sendFile(path.join(__dirname, "dist", "index.html"));
 });
+
 const PORT = process.env.PORT || 5000;
 
 app.listen(PORT, () => {
